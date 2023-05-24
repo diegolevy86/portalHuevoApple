@@ -8,7 +8,11 @@
 </head>
 <body>
     <h1>Huevo Apple</h1>
-    <h2>Cargar equipo</h2>
+    <button href="#cargarReparacion">Cargar Reparación</button>
+    <button href="#cargarReparacionSinCliente">Cargar Reparación sin cliente</button>
+    <br>
+    <br>
+    <h2 id="cargarReparacion">Cargar Reparación</h2>
     <form action="/" method="post">
         <label for="modeloColor">Modelo y color</label> 
         <select name="modeloColor">
@@ -72,5 +76,84 @@
         <br>
         <button type="submit">Cargar</button>
     </form>
+
+    <br>
+    <br>
+
+    <h2 id="cargarReparacionSinCliente">Cargar Reparación sin cliente</h2>
+    <form action="/" method="post">
+        <label for="modeloColor">Modelo y color</label> 
+        <select name="modeloColor">
+            <option value="1">6 Negro</option>
+            <option value="2">6 Gris</option>
+            <option value="3">6 Dorado</option>
+            <option value="4">6 plus Negro</option>
+            <option value="5">6 plus Gris</option>
+            <option value="6">6 plus Dorado</option>
+            <option value="7">6S Negro</option>
+            <option value="8">6S Gris</option>
+            <option value="9">6S Dorado</option>
+            <option value="9">6S Rosa</option>
+            <option value="10">6S plus Negro</option>
+            <option value="11">6S plus Gris</option>
+            <option value="12">6S plus Dorado</option>
+            <option value="13">6S plus Rosa</option>
+        </select>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha"> 
+        <br>
+        <br>
+        <label for="codigo">Código</label>
+        <input type="text" name="codigo">
+        <br>
+        <br>
+        <label for="reparacion">Reparación</label> 
+        <select name="Reparación">
+            <option value="1">Cambio pantalla</option>
+            <option value="2">Cambio batería</option>
+            <option value="3">Cambio dock</option>
+            <option value="4">Cambio cámara trasera</option>
+            <option value="5">Cambio flex cámara frontal</option>
+            <option value="6">Cambio flex sensores/parlante frontal (Face ID)</option>
+            <option value="7">Cambio carcasa / módulo trasero</option>
+        </select>
+        <br>
+        <br>
+        <label for="reventa">Reventa</label> 
+        <select name="reventa">
+            <option value="1">NULL</option>
+            <option value="2">Fede hombre niño</option>
+            <option value="3">Martín ex peluquero</option>
+            <option value="4">Santi el enviado de Jesús</option>
+            <option value="5">Fantech deudores morosos</option>
+            <option value="6">Guido</option>
+        </select>
+        <br>
+        <br>
+        <label for="observaciones">Observaciones</label>
+        <input type="text" name="observaciones" size="50">
+        <br>
+        <br>
+        <button type="submit">Cargar</button>
+    </form>
+
+<br>
+<br>
+
+<h2>Mostrar BD completa</h2>
+<table border="1px" style="border: 1px solid black;">
+    <tr>
+        <td>123456789012345</td>
+        <td>iPhone 8 plus</td>
+        <td>Blanco</td>
+        <td>Bicho Bicho</td>
+        <td>bicho@bicho.com</td>
+        <td>2215001000</td>
+        <td>123456</td>
+        <td>24/05/2023</td>
+        <td>Cambio pantalla</td>
+    </tr>
+</table>
+
 </body>
 </html>
